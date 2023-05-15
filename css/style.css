@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    vertical-align: top;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #666;
+}
+
+p {
+    color: #999;
+}
+
+.rapper {
+    margin-bottom: 20px;
+    overflow: auto;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rapper:hover {
+    transform: scale(1.1);
+}
+
+.rapper img {
+    max-width: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.carousel-container {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-image.active {
+    opacity: 1;
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
